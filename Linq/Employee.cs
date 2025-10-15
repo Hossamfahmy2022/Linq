@@ -1,6 +1,6 @@
 ﻿namespace Linq;
 
-internal class Employee
+public class Employee
 {
     public int Id { get; set; }
     public string Name { get; set; }
@@ -9,4 +9,5 @@ internal class Employee
     public int DepartmentId { get; set; }
 
     public Department  department { get; set; }
+    public List<Project> Projects { get; set; }
 }
