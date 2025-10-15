@@ -64,6 +64,7 @@ foreach (var item in EvenNumbers)
     Console.Write($"{item},");
 #endregion
 
+#region Data Setup
 // Data (Random data to apply all linq operators on it)
 var departments = new List<Department>
         {
@@ -129,7 +130,9 @@ var depts = new List<Department>
                     }
                 }
             }
-        };
+        }; 
+#endregion
+
 #region 1- Filtration (Restrictions) Operator – Where
 // Verision 1
 // public static IEnumerable<TSource> Where<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate);
