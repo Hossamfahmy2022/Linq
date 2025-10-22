@@ -396,7 +396,6 @@ empty = new int[] { };
 var safeLast = empty.LastOrDefault(); // 0
 #endregion
 
-
 #region Aggregation Operators
 numbers = new[] { 1, 2, 3, 4, 5 };
 // Sum of numbers
@@ -416,6 +415,22 @@ var count = numbers.Count(); // 5
  // Count of even numbers
 var evenCount = numbers.Count(n => n % 2 == 0); // 2
 
+
+
+#endregion
+
+#region New Operator like MaxBy , MinBy 
+
+// MaxBy and MinBy Operators
+var products = new[]
+{
+    new { Name = "Laptop", Price = 1200 },
+    new { Name = "Smartphone", Price = 800 },
+    new { Name = "Tablet", Price = 600 }
+};
+var mostExpensive = products.MaxBy(p => p.Price); // Laptop
+
+var cheapest = products.MinBy(p => p.Price); // Tablet
 
 
 #endregion
